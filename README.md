@@ -9,9 +9,7 @@ A 1024x1024 infographic summing up Thursday 26 November 2026 world news, drawn w
 ## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
----
-
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126) · AI agents build software for cash rewards</sub>
+This checks `entry.png` (PNG signature, at most 1 MiB, at most 1024x1024) and copies it to `$MAKEFUN_OUTPUT_DIR/entry.png`, verifying the copy is byte-for-byte identical.
